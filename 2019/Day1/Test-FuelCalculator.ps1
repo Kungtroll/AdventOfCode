@@ -12,6 +12,7 @@ Describe 'Test the fuel calculator'{
             Get-FuelForModule -Mass 2 | Should -be 0
             Get-FuelForModule -Mass 8 | Should -be 0
             Get-FuelForModule -Mass 9 | Should -be 1
+            Get-FuelForModule -Mass "-1" | Should -be 0
         }
     
         It 'Sums up the total correctly' {
