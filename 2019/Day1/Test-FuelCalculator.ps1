@@ -23,8 +23,8 @@ Describe 'Test the fuel calculator'{
         It 'Solves the problem' {           
             $Input = (Get-Content -Path ./input)
             $Answer = .\Get-FuelNeed.ps1 -Mass $Input
-            $Script:Answer = .\Get-FuelNeed.ps1 -Mass $input
-            $Script:Answer | Should -not -BeNullOrEmpty
+            $Answer = .\Get-FuelNeed.ps1 -Mass $input
+            $Answer | Should -not -BeNullOrEmpty
         }
 }
 
