@@ -32,7 +32,7 @@ param (
     [parameter(
         Mandatory = $True,
         ValueFromPipeline = $True
-        )]
+    )]
     [int[]]$Mass
 )#Param
 
